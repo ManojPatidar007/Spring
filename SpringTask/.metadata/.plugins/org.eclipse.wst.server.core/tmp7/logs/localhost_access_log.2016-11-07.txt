@@ -1,0 +1,17 @@
+127.0.0.1 - - [07/Nov/2016:13:20:13 +0530] "GET / HTTP/1.1" 404 955
+127.0.0.1 - - [07/Nov/2016:13:20:14 +0530] "GET /DeveloperForum/ HTTP/1.1" 302 -
+127.0.0.1 - - [07/Nov/2016:13:20:14 +0530] "GET /DeveloperForum/login HTTP/1.1" 200 2285
+127.0.0.1 - - [07/Nov/2016:13:20:14 +0530] "GET /DeveloperForum/resources/css/background.png HTTP/1.1" 404 952
+0:0:0:0:0:0:0:1 - - [07/Nov/2016:13:20:24 +0530] "GET /DeveloperForum/login HTTP/1.1" 200 2285
+0:0:0:0:0:0:0:1 - - [07/Nov/2016:13:20:24 +0530] "GET /DeveloperForum/resources/css/login.css HTTP/1.1" 200 2522
+0:0:0:0:0:0:0:1 - - [07/Nov/2016:13:20:24 +0530] "GET /DeveloperForum/resources/css/background.png HTTP/1.1" 404 952
+0:0:0:0:0:0:0:1 - - [07/Nov/2016:13:20:37 +0530] "POST /DeveloperForum/login HTTP/1.1" 404 1066
+127.0.0.1 - - [07/Nov/2016:13:20:47 +0530] "GET /DeveloperForum/login HTTP/1.1" 200 2285
+127.0.0.1 - - [07/Nov/2016:13:20:47 +0530] "GET /DeveloperForum/login HTTP/1.1" 200 2285
+127.0.0.1 - - [07/Nov/2016:13:20:47 +0530] "GET /DeveloperForum/login HTTP/1.1" 200 2285
+127.0.0.1 - - [07/Nov/2016:13:20:47 +0530] "GET /DeveloperForum/resources/css/login.css HTTP/1.1" 304 -
+127.0.0.1 - - [07/Nov/2016:13:20:47 +0530] "GET /DeveloperForum/resources/css/background.png HTTP/1.1" 404 952
+0:0:0:0:0:0:0:1 - - [07/Nov/2016:13:23:00 +0530] "GET /DeveloperForum/login HTTP/1.1" 200 2285
+0:0:0:0:0:0:0:1 - - [07/Nov/2016:13:23:10 +0530] "POST /DeveloperForum/login HTTP/1.1" 404 1066
+0:0:0:0:0:0:0:1 - - [07/Nov/2016:13:23:26 +0530] "GET /DeveloperForum/login HTTP/1.1" 200 2285
+0:0:0:0:0:0:0:1 - - [07/Nov/2016:13:23:31 +0530] "POST /DeveloperForum/login HTTP/1.1" 404 1066

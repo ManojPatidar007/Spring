@@ -1,0 +1,15 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<!-- default handler mapping -->
+<!-- controller -->
+<bean name="/submit.htm" class="com.hello.controller">
+</bean>
+<!-- view resolver -->
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<property name="prefix" value="/"></property>
+<property name="suffix" value=".jsp"></property>
+</bean>
+
+
+</beans>

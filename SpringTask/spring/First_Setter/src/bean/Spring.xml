@@ -1,0 +1,20 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="r" class="employee.Employee" singleton="true">
+		<property name="name">
+			<value>reetu</value>
+		</property>
+		<!-- <property name="namee">
+			<value>reetuuuu</value>
+		</property> -->
+	</bean>
+	<bean id="t" class="employee.Employee" singleton="true">
+		<property name="name">
+			<value>reetuuuuuuuu</value>
+		</property>
+		<!-- <property name="namee">
+			<value>reetuuuu</value>
+		</property> -->
+	</bean>
+</beans>

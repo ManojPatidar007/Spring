@@ -1,0 +1,10 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+		"http://www.springframework.org/dtd/spring-beans.dtd">
+		<beans>
+		<bean id="t" class="beans.car" singleton="true" >
+		<property name="name" value="honda"></property>
+	    <property name="model" value="2016"></property>	
+
+		</bean>
+		
+		</beans>

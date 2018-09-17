@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>BookApplication</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>BookRoom.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>Selecting the capacity for setting up meeting </description>
+    <display-name>SetCapacity</display-name>
+    <servlet-name>SetCapacity</servlet-name>
+    <servlet-class>net.crack.SetCapacity</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SetCapacity</servlet-name>
+    <url-pattern>/Capacity.url</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>setTime</display-name>
+    <servlet-name>setTime</servlet-name>
+    <servlet-class>net.crack.setTime</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>setTime</servlet-name>
+    <url-pattern>/Time.url</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SetTimeMain</display-name>
+    <servlet-name>SetTimeMain</servlet-name>
+    <servlet-class>net.crack.SetTimeMain</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SetTimeMain</servlet-name>
+    <url-pattern>/settimemain.url</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Validate_Time</display-name>
+    <servlet-name>Validate_Time</servlet-name>
+    <servlet-class>net.crack.Validate_Time</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Validate_Time</servlet-name>
+    <url-pattern>/timeValidation.url</url-pattern>
+  </servlet-mapping>
+</web-app>

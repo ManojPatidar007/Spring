@@ -1,0 +1,93 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+   http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+
+
+	<bean id="loginService" class="netcracker.developer.service.impl.LoginServiceImpl">
+		<property name="loginDao" ref="loginDao"></property>
+	</bean>
+
+	<bean id="loginDao" class="netcracker.developer.dao.impl.LoginDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+
+	<bean id="regService" class="netcracker.developer.service.impl.RegServiceImpl">
+		<property name="regDao" ref="regDao"></property>
+	</bean>
+
+	<bean id="regDao" class="netcracker.developer.dao.impl.RegDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+
+
+	<bean id="rolesService" class="netcracker.developer.service.impl.RolesServiceImpl">
+		<property name="rolesDao" ref="rolesDao"></property>
+	</bean>
+
+	<bean id="rolesDao" class="netcracker.developer.dao.impl.RolesDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+
+	<bean id="adminService" class="netcracker.developer.service.impl.AdminServiceImpl">
+		<property name="ado" ref="ado"></property>
+	</bean>
+
+	<bean id="ado" class="netcracker.developer.dao.impl.AdminDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+
+
+
+	<bean id="memberService" class="netcracker.developer.service.impl.MemberServiceImpl">
+		<property name="memberDao" ref="memberDao"></property>
+	</bean>
+
+	<bean id="memberDao" class="netcracker.developer.dao.impl.MemberDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+
+	<bean id="questionService" class="netcracker.developer.service.impl.QuestionServiceImpl">
+		<property name="questionDao" ref="questionDao"></property>
+	</bean>
+
+	<bean id="questionDao" class="netcracker.developer.dao.impl.QuestionDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+	<bean id="answerService" class="netcracker.developer.service.impl.AnswerServiceImpl">
+		<property name="answerDao" ref="answerDao"></property>
+	</bean>
+
+	<bean id="answerDao" class="netcracker.developer.dao.impl.AnswerDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+	<bean id="forumService" class="netcracker.developer.service.impl.ForumServiceImpl">
+		<property name="forumDao" ref="forumDao"></property>
+	</bean>
+
+	<bean id="forumDao" class="netcracker.developer.dao.impl.ForumDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/developer" />
+		<property name="username" value="root" />
+		<property name="password" value="root@123" />
+	</bean>
+
+</beans>
